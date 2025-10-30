@@ -1,3 +1,5 @@
+import ListaPostagens from "../../components/postagem/listapostagens/ListaPostagens"
+import ModalPostagem from "../../components/postagem/modalpostagem/ModalPostagem"
 
 function Home() {
     return (
@@ -16,15 +18,10 @@ function Home() {
                             Expresse aqui seus pensamentos e opiniões.
                         </p>
 
-                        <div className="mt-6">
-                            {/* Botão de Ação Principal em Verde-Água/Ciano */}
-                            <button
-                                className='rounded-full text-violet-950 bg-teal-400 
-                                            hover:bg-teal-500 transition-colors duration-300 
-                                            font-bold text-xl px-8 py-3 shadow-lg shadow-teal-400/50'
-                            >
-                                Nova Postagem
-                            </button>
+                        <div className="flex justify-around gap-4">
+
+                            <ModalPostagem />
+                            
                         </div>
                     </div>
 
@@ -40,6 +37,7 @@ function Home() {
                     </div>
                 </div>
             </div>
+             <ListaPostagens />
         </>
     )
 }
