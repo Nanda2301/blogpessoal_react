@@ -28,7 +28,7 @@ function Home() {
                     {/* Imagem Reposicionada e com Estilo */}
                     <div className="flex justify-center p-8">
                         <img
-                            src="https://i.imgur.com/fyfri1v.png"
+                            src="https://i.imgur.com/gaEzoH4.png"
                             alt="Imagem Página Home"
                             // Estilo para dar um toque criativo: sombra neon e tamanho grande
                             className='w-full max-w-lg h-auto object-contain 

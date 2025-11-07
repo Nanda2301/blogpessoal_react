@@ -4,9 +4,6 @@ import { ClipLoader } from "react-spinners";
 import { AuthContext } from "../../contexts/AuthContext";
 import type UsuarioLogin from "../../models/UsuarioLogin";
 
-// A imagem de fundo do design foi mantida (se for a que você mencionou)
-const BACKGROUND_IMAGE_LOGIN_URL = "https://i.imgur.com/ZZFAmzo.jpg"; 
-
 function Login() {
 
     const navigate = useNavigate();
@@ -104,8 +101,8 @@ function Login() {
                 <div className="lg:block hidden h-full w-full">
                     {/* Se você quiser usar a imagem de fundo criativa: */}
                     <div 
-                        className="bg-no-repeat w-full h-full bg-cover bg-center" 
-                        style={{ backgroundImage: `url(${BACKGROUND_IMAGE_LOGIN_URL})` }} 
+                        className="bg-[url('https://i.imgur.com/6XRZ8HM.png')] lg:block hidden bg-no-repeat 
+                                   w-full min-h-screen bg-cover bg-center"
                     >
                         {/* Você pode adicionar um overlay semi-transparente aqui para o "Wow" */}
                         <div className="w-full h-full bg-violet-950/40 backdrop-blur-sm"></div>
